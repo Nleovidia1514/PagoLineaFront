@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pago Linea</title>
+  </head>
+  <body>
+    <main>
+      <div class="social-networks">
+        <a href="" target="_blank"
+          ><ion-icon class="social" name="logo-facebook"></ion-icon
+        ></a>
+        <a href="" target="_blank"
+          ><ion-icon class="social" name="logo-instagram"></ion-icon
+        ></a>
+        <a href="" target="_blank"
+          ><ion-icon class="social" name="logo-twitter"></ion-icon
+        ></a>
+      </div>
+      <div class="menu">
+        <ul class="menu-li">
+          <a href="#" onclick="toggleMenu()"><li>link 1</li></a>
+          <a href="#pagolinea-business" onclick="toggleMenu()"><li>PAGOLINEA NEGOCIOS</li></a>
+          <a href="#" onclick="toggleMenu()"><li>link 3</li></a>
+          <a href="#" onclick="toggleMenu()"><li>link 4</li></a>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="menu-toggler" onclick="toggleMenu()">
+          <ion-icon id="toggle-icon" name="reorder-three-outline"></ion-icon>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <img
+              class="main-logo"
+              src="assets/logos/Logo-horizontal.png"
+              alt="Logo de PagoLinea"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <!-- <img class="iphone-pl mx-auto" src="assets/iphone-pl-transparent.png" alt="PagoLinea iphone image"> -->
+            <img
+              class="screenshot"
+              src="assets/images/screenshot-1.png"
+              alt="App transactions screenshot"
+            />
+          </div>
+          <div class="col-6">
+            <img
+              class="screenshot"
+              src="assets/images/screeshot-2.png"
+              alt="App transaction completed screenshot"
+            />
+            <!-- <img class="iphone-pl mx-auto" src="assets/iphone-pl-transparent.png" alt="PagoLinea iphone image"> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <a href=""
+              ><img
+                class="download-btn"
+                src="assets/images/appstore-download.png"
+                alt="Appstore download button"
+            /></a>
+          </div>
+          <div class="col-6">
+            <a href=""
+              ><img
+                class="download-btn"
+                src="assets/images/google-play-download.png"
+                alt="Google play download button"
+            /></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="clock"></div>
+        </div>
+        <div class="row">
+          <div class="about-app">
+            <h1 class="title">¿QUE ES PAGOLINEA?</h1>
+            <p>
+              Es una procesadora de pagos internacionales de dinero abierta a
+              transaccionar divisas internacionales y criptomonedas a base y
+              administrados con tecnología BLOCKCHAIN.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="video-container">
+            <video src="assets/videos/pay_pal.mp4" controls autoplay></video>
+          </div>
+        </div>
+        <div class="row">
+          <div id="pagolinea-business" class="about-app">
+            <h1 class="title">
+              ¿COMO FUNCIONA PAGOLINEA NEGOCIOS PARA NEGOCIOS?
+            </h1>
+            <p>
+              Este botón de pago permite a los negocios despreocuparse por sus
+              pagos online y por altas tasas de comisión por pagos de sus
+              clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="row">
+            <ul>
+                <li>Hola</li>
+            </ul>
+        </div>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
