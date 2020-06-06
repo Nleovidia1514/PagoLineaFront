@@ -60,6 +60,23 @@ a {
   visibility: hidden;
 }
 
+.social-networks.footer {
+  flex-direction: row;
+  background-color: transparent;
+  position: initial;
+  width: 100%;
+  height: auto;
+  top: initial;
+  visibility: visible;
+  color: white;
+  margin-top: 0;
+}
+
+.social-networks.footer .social {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .social {
   font-size: 30px;
   margin: 5px;
@@ -114,11 +131,14 @@ img {
 
 footer {
   background-color: black;
+  color: white;
   margin-left: -20px;
   margin-right: -20px;
   margin-bottom: -20px;
   margin-top: 20px;
   padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 40px 40px #000000;
 }
 
 .menu-toggler {
