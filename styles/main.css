@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+/* #413a96, #5556a5 */
+
 body {
   margin: 0;
 }
@@ -16,8 +18,8 @@ main {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 1) 16%,
-    rgba(88, 70, 190, 1) 37%
+    #332797 16%,
+    #5556a5 37%
   );
 }
 
@@ -76,7 +78,10 @@ img {
 }
 
 .main-logo {
-  width: 100%;
+  float: left;
+  margin: -20px;
+  margin-top: -60px;
+  width: 100vw;
 }
 
 .about-app {
@@ -101,15 +106,6 @@ img {
   align-items: center;
   margin: -20px;
   padding: 20px;
-  min-height: 70vh;
-  background: rgb(88, 70, 190);
-  background: linear-gradient(
-    180deg,
-    rgba(88, 70, 190, 1) 10%,
-    rgba(255, 255, 255, 1) 29%,
-    rgba(255, 255, 255, 1) 72%,
-    rgba(88, 70, 190, 1) 96%
-  );
 }
 
 .video-container > video {
@@ -131,6 +127,7 @@ footer {
   position: absolute;
   top: 5px;
   z-index: 10;
+  color: white;
 }
 
 .menu-toggler.open {
