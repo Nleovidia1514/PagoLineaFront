@@ -458,6 +458,7 @@ header a {
   }
 
   .start-now-container-xl {
+    display: initial;
     width: 70%;
   }
 
