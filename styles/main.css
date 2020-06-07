@@ -72,7 +72,8 @@ a {
 
 header.opaque {
   position: initial;
-  background-color: #662dcf;
+  /* background-color: #662dcf; */
+  background-color: white;;
 }
 
 .social {
@@ -153,9 +154,9 @@ footer {
   font-size: 50px;
   right: 5px;
   position: absolute;
-  top: 5px;
   z-index: 10;
-  color: white;
+  color: black;
+  display: inline;
 }
 
 .menu-toggler.open {
@@ -180,7 +181,9 @@ footer {
 .menu > ul {
   height: 100%;
   display: flex;
-  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none!important;
   flex-direction: column;
   font-size: 30px;
   justify-content: center;
@@ -224,20 +227,23 @@ header {
   margin: -20px -20px 30px -20px;
   justify-content: center;
   align-items: center;
-  display: none !important;
-  box-shadow: 0 10px 40px #000000;
+  /* display: none !important; */
+  box-shadow: 0 5px 20px #000000;
 }
 
 .header-btn {
-  position: absolute;
-  margin-right: 30px;
+  position: relative;
+  top: 13px;
+  /* display: none; */
   outline: none;
   right: 0;
 }
 
+
+/* 
 header > * {
   display: none;
-}
+} */
 
 header a {
   background-color: black;
@@ -250,6 +256,13 @@ header a {
 
 .logo-web {
   height: 100%;
+  position: relative;
+  display: none;
+}
+
+.logo-web-horizontal {
+  height: 70%;
+  top: 8px;
   position: relative;
 }
 
@@ -310,6 +323,32 @@ header a {
   object-fit: contain;
 }
 
+.start-now-container {
+  height: 30px;
+}
+
+.start-now {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  color: rgb(0, 0, 0)!important;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+
+.start-now-container > .start-now:hover {
+  transition: box-shadow ease-in 0.2s;
+  box-shadow: 0 0 10px 1px cadetblue;
+}
+
+.start-now-container-xl {
+  display: none;
+}
+
+
+
 @media only screen and (min-width: 1140px) {
   .about-app {
     max-height: 80vh;
@@ -318,7 +357,7 @@ header a {
   .main-logo.pc {
     display: initial;
     width: auto;
-    height: 50%;
+    height: 40%;
     margin: 0;
     padding: 40px;
     position: relative;
@@ -348,7 +387,7 @@ header a {
 
   .main-logo.pc {
     display: initial;
-    width: 60%;
+    width: auto;
     height: 50%;
     margin: 0;
     padding: 40px;
@@ -378,6 +417,9 @@ header a {
 
   header {
     display: flex !important;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   header > * {
@@ -392,12 +434,47 @@ header a {
   }
 
   .screenshot-desc {
-    font-weight: 900;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 20px;
   }
 
   .video-container {
     margin: 0;
     padding: 60px;
+  }
+
+  .logo-web {
+    display: initial;
+  }
+
+  .header-btn {
+    display: initial;
+    top: 0;
+    right: 20px;
+  }
+
+  .start-now-container {
+    display: none;
+  }
+
+  .start-now-container-xl {
+    width: 70%;
+  }
+
+  .start-now-container-xl > .start-now {
+    text-decoration: none;
+    padding: 5px;
+  }
+
+  .start-now-container-xl > .start-now:hover {
+    transition: box-shadow ease-in 0.2s;
+    box-shadow: 0 0 10px 1px cadetblue;
+  }
+
+  .logo-web-horizontal {
+    height: 70%;
+    top: 8px;
+    left: 5px;
+    position: initial;
   }
 }
