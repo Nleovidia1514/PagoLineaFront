@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://www.pagolinea.com/favicon.png">
     <link rel="stylesheet" href="styles/main.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
@@ -18,29 +23,28 @@
   </head>
   <body>
     <main>
-      <div class="social-networks">
-        <a href="https://m.facebook.com/" target="_blank"
-          ><ion-icon class="social" name="logo-facebook"></ion-icon
-        ></a>
-        <a href="https://instagram.com/pago_linea?igshid=54huwmyopaa" target="_blank"
-          ><ion-icon class="social" name="logo-instagram"></ion-icon
-        ></a>
-        <!-- <a href="" target="_blank"
-          ><ion-icon class="social" name="logo-twitter"></ion-icon
-        ></a> -->
-      </div>
       <div class="menu">
         <ul class="menu-li">
-          <a href="#" onclick="toggleMenu()"><li>link 1</li></a>
-          <a href="#pagolinea-business" onclick="toggleMenu()"
-            ><li>PAGOLINEA NEGOCIOS</li></a
+          <a href="https://m.facebook.com/pagolinea" onclick="toggleMenu()"><li>FACEBOOK</li></a>
+          <a href="https://instagram.com/pago_linea?igshid=54huwmyopaa" onclick="toggleMenu()"
+            ><li>INSTAGRAM</li></a
           >
-          <a href="https://wwww.pagolinea.com" onclick="toggleMenu()"><li>REGISTRARSE</li></a>
-          <a href="#" onclick="toggleMenu()"><li>link 4</li></a>
+          <a href="https://wwww.pagolinea.com" onclick="toggleMenu()"
+            ><li>REGISTRARSE</li></a
+          >
+          <!-- <a href="#" onclick="toggleMenu()"><li>link 4</li></a> -->
         </ul>
       </div>
+      <header>
+        <img
+          class="logo-web"
+          src="assets/logos/web-logo.png"
+          alt="Logo wwww.pagolinea.com"
+        />
+        <a class="header-btn" href="https://wwww.pagolinea.com" >REGISTRARSE</a>
+      </header>
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-md-6">
           <img
             class="main-logo"
             src="assets/logos/logo-white.jpeg"
@@ -48,67 +52,70 @@
           />
         </div>
       </div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="menu-toggler" onclick="toggleMenu()">
           <ion-icon id="toggle-icon" name="reorder-three-outline"></ion-icon>
         </div>
 
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 col-md-3 col-md-offset-6 screenshot-container">
             <!-- <img class="iphone-pl mx-auto" src="assets/iphone-pl-transparent.png" alt="PagoLinea iphone image"> -->
             <img
               class="screenshot"
               src="assets/images/screenshot-1.png"
               alt="App transactions screenshot"
             />
-          </div>
-          <div class="col-6">
-            <img
-              class="screenshot"
-              src="assets/images/screeshot-2.png"
-              alt="App transaction completed screenshot"
-            />
-            <!-- <img class="iphone-pl mx-auto" src="assets/iphone-pl-transparent.png" alt="PagoLinea iphone image"> -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
             <a href=""
               ><img
+                title="App Store"
                 class="download-btn"
                 src="assets/images/appstore-download.png"
                 alt="Appstore download button"
             /></a>
           </div>
-          <div class="col-6">
+          <div class="col-6 col-md-3 screenshot-container">
+            <img
+              class="screenshot"
+              src="assets/images/screeshot-2.png"
+              alt="App transaction completed screenshot"
+            />
             <a href=""
               ><img
+                title="Google Play"
                 class="download-btn"
                 src="assets/images/google-play-download.png"
                 alt="Google play download button"
             /></a>
+            <!-- <img class="iphone-pl mx-auto" src="assets/iphone-pl-transparent.png" alt="PagoLinea iphone image"> -->
           </div>
-        </div>
-        <div class="row">
-          <div class="clock"></div>
-        </div>
-        <div class="row">
-          <div class="about-app">
+          <div class="about-app col-12 col-md-6 flex-start">
+            <img
+              class="main-logo pc"
+              src="assets/logos/logo-white-transparent.png"
+              alt="Logo de PagoLinea"
+            />
             <h1 class="title">¿QUE ES PAGOLINEA?</h1>
             <p>
               Es una procesadora de pagos internacionales de dinero abierta a
               transaccionar divisas internacionales y criptomonedas a base y
               administrados con tecnología BLOCKCHAIN.
             </p>
+            <div class="social-networks">
+              <a title="Facebook" href="https://m.facebook.com/" target="_blank"
+                ><ion-icon class="social" name="logo-facebook"></ion-icon
+              ></a>
+              <a
+                title="Instagram"
+                href="https://instagram.com/pago_linea?igshid=54huwmyopaa"
+                target="_blank"
+                ><ion-icon class="social" name="logo-instagram"></ion-icon
+              ></a>
+              <!-- <a href="" target="_blank"
+                ><ion-icon class="social" name="logo-twitter"></ion-icon
+              ></a> -->
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="video-container">
-            <video src="assets/videos/pay_pal.mp4" controls autoplay></video>
-          </div>
-        </div>
-        <div class="row">
-          <div id="pagolinea-business" class="about-app">
+          <div id="pagolinea-business" class="about-app col-12 col-md-6">
             <h1 class="title">
               ¿COMO FUNCIONA PAGOLINEA NEGOCIOS PARA NEGOCIOS?
             </h1>
@@ -118,18 +125,73 @@
               clientes.
             </p>
           </div>
+          <div class="video-container col-12 col-md-6">
+            <video src="assets/videos/pay_pal.mp4" controls autoplay></video>
+          </div>
+        </div>
+        <div class="func-sect-container col-12">
+          <div class="func-sect">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="screenshot small">
+                  <img
+                    src="assets/images/screenshot-4.png"
+                    alt="captura de la aplicacion"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="screenshot-desc">
+                  <h1>¡FACIL USO!</h1>
+                  <p>SOLO TIENES QUE REGISTRARTE EN LA APLICACION Y PODRAS EMPEZAR A COMPRAR Y VENDER MONEDAS DIVERSAS DE TODAS PARTES DEL MUNDO</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="screenshot-desc">
+                  <h1>¡IMPULSA TU NEGOCIO!</h1>
+                  <p>PAGO LINEA LE PROPORCIONA A TUS CLIENTES UNA GRAN VARIEDAD DE METODOS DE PAGO LO CUAL IMPULSARA TU NEGOCIO Y GARANTIZARA EL EXITO DEL MISMO</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="screenshot small">
+                  <img
+                    src="assets/images/screenshot-3-small.png"
+                    alt="captura de la aplicacion"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-6">
+                <div class="screenshot small">
+                  <img
+                    src="assets/images/screenshot-3-small.png"
+                    alt="captura de la aplicacion"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="screenshot-desc"></div>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
 
       <footer>
         <div class="row">
-          <div class="col-12">PagoLinea  &copy; 2020. Todos los derechos reservados</div>
+          <div class="col-12">
+            PagoLinea &copy; 2020. Todos los derechos reservados
+          </div>
           <div class="col-12">
             <div class="social-networks footer">
-              <a href="https://m.facebook.com/" target="_blank"
+              <a href="https://m.facebook.com/pagolinea" target="_blank"
                 ><ion-icon class="social" name="logo-facebook"></ion-icon
               ></a>
-              <a href="https://instagram.com/pago_linea?igshid=54huwmyopaa" target="_blank"
+              <a
+                href="https://instagram.com/pago_linea?igshid=54huwmyopaa"
+                target="_blank"
                 ><ion-icon class="social" name="logo-instagram"></ion-icon
               ></a>
               <!-- <a href="" target="_blank"
@@ -142,5 +204,6 @@
     </main>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
   </body>
 </html>

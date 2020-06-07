@@ -15,12 +15,15 @@ main {
   min-height: 100%;
   width: 100%;
   background-color: #5846be;
-  background: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
     #332797 16%,
     #5556a5 37%
-  );
+  ); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../assets/images/background-1.jpg');
 }
 
 .iphone-pl {
@@ -44,19 +47,9 @@ a {
 
 .social-networks {
   padding: 5px;
-  top: 50%;
-  margin-top: -10vh;
   display: flex;
-  width: 40px;
-  height: 20vh;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: #ffc27e;
-  position: absolute;
-  margin-left: 5px;
-  border-radius: 10px;
-  z-index: 100;
   visibility: hidden;
 }
 
@@ -77,9 +70,19 @@ a {
   margin-right: 10px;
 }
 
+header.opaque {
+  position: initial;
+  background-color: #662dcf;
+}
+
 .social {
   font-size: 30px;
-  margin: 5px;
+  margin: 10px;
+}
+
+.social:hover {
+  transform: scale(1.5);
+  transition: transform ease-in 0.05s;
 }
 
 img {
@@ -88,6 +91,7 @@ img {
 
 .download-btn {
   width: 100%;
+  margin-top: 10px;
 }
 
 .screenshot {
@@ -99,16 +103,21 @@ img {
   margin: -20px;
   margin-top: -60px;
   width: 100vw;
+  box-shadow: 0 20px 40px #492194;
 }
 
 .about-app {
+  flex-direction: column;
   margin-top: 30px;
   width: 100%;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-app > p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -121,7 +130,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -20px;
   padding: 20px;
 }
 
@@ -135,7 +143,7 @@ footer {
   margin-left: -20px;
   margin-right: -20px;
   margin-bottom: -20px;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 20px;
   text-align: center;
   box-shadow: 0px 0px 40px 40px #000000;
@@ -185,6 +193,7 @@ footer {
   top: -500px;
   right: -500px;
   transition: all ease-in 0.3s;
+  text-align: center;
 }
 
 .menu > ul li.open {
@@ -199,4 +208,196 @@ footer {
 .menu.open {
   left: 0;
   visibility: visible;
+}
+
+.main-logo.pc {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  height: 60px;
+  transition: all ease-in 0.2s;
+  background: white;
+  margin: -20px -20px 30px -20px;
+  justify-content: center;
+  align-items: center;
+  display: none !important;
+  box-shadow: 0 10px 40px #000000;
+}
+
+.header-btn {
+  position: absolute;
+  margin-right: 30px;
+  outline: none;
+  right: 0;
+}
+
+header > * {
+  display: none;
+}
+
+header a {
+  background-color: black;
+  text-decoration: none !important;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  color: white !important;
+}
+
+.logo-web {
+  height: 100%;
+  position: relative;
+}
+
+.flex-start {
+  justify-content: start;
+}
+
+.func-sect-container {
+  background-color: white;
+  padding: 0!important;
+  height: auto;
+  width: 100vw!important;
+  max-width: 100vw!important;
+  background-image: url('../assets/images/coins.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: -35px;
+}
+
+.func-sect {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.func-sect > .row {
+  height: auto;
+  max-height: 100vh!important;
+  align-items: center;
+}
+
+.func-sect > .row * {
+  height: 100%;
+}
+
+.screenshot.small {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.screenshot-desc {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+.screenshot.small > img {
+  width: auto;
+  height: 50vh;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 1140px) {
+  .about-app {
+    max-height: 80vh;
+  }
+
+  .main-logo.pc {
+    display: initial;
+    width: auto;
+    height: 50%;
+    margin: 0;
+    padding: 40px;
+    position: relative;
+    box-shadow: none;
+    margin-top: -30px;
+  }
+
+  .screenshot-container {
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+  }
+
+  .screenshot {
+    max-height: 50vh;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1140px) {
+  .about-app {
+    max-height: 50vh;
+  }
+
+
+  .main-logo.pc {
+    display: initial;
+    width: 60%;
+    height: 50%;
+    margin: 0;
+    padding: 40px;
+    position: relative;
+    box-shadow: none;
+    margin-top: -30px;
+  }
+
+  .screenshot-container {
+    max-height: 80vh;
+  }
+
+  .screenshot {
+    max-height: 80vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header a:hover {
+    transform: scale(1.2);
+    transition: transform ease-in 0.05s;
+  }
+
+  .social-networks {
+    visibility: visible;
+  }
+
+  header {
+    display: flex !important;
+  }
+
+  header > * {
+    display: initial;
+  }
+  .main-logo {
+    display: none;
+  }
+
+  .menu-toggler {
+    display: none;
+  }
+
+  .screenshot-desc {
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+  .video-container {
+    margin: 0;
+    padding: 60px;
+  }
 }
