@@ -13,14 +13,14 @@ const debounce = fn => {
 const storeScroll = () => {
   if (window.scrollY === 0) {
     document.querySelector('header').classList.add('opaque');
-    document
-      .querySelector('.logo-web')
-      .setAttribute('src', 'assets/logos/web-logo-white.png');
+    // document
+    //   .querySelector('.logo-web')
+    //   .setAttribute('src', 'assets/logos/web-logo-white.png');
   } else {
     document.querySelector('header').classList.remove('opaque');
-    document
-      .querySelector('.logo-web')
-      .setAttribute('src', 'assets/logos/web-logo.png');
+    // document
+    //   .querySelector('.logo-web')
+    //   .setAttribute('src', 'assets/logos/web-logo.png');
   }
 };
 
