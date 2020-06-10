@@ -1,7 +1,13 @@
 * {
   box-sizing: border-box;
+  
+  font-family: 'Montserrat', sans-serif;
 }
 
+@font-face {
+  font-family: 'Times Bold Italic';
+  src: url('../assets/fonts/Times\ Bold\ Italic.ttf');
+}
 /* #413a96, #5556a5 */
 
 body {
@@ -73,7 +79,7 @@ a {
 header.opaque {
   position: initial;
   /* background-color: #662dcf; */
-  background-color: white;;
+  background-color: white;
 }
 
 .social {
@@ -90,13 +96,59 @@ img {
   object-fit: fill;
 }
 
+.headerimage {
+  background-color: #003a6f;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.backshape .wrapper-back {
+  display: block;
+  float: left;
+  margin: 50px auto 100px;
+  width: 100%;
+  padding: 0;
+
+  padding: 0 !important;
+  height: auto;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: -35px;
+  background-image: url('../assets/images/buenos-aires.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 10deg);
+  -webkit-transform: skew(0deg, 5deg);
+}
+
+.main-desc {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  text-align: end;
+  color: white;
+}
+
+.download-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+
 .download-btn {
   width: 100%;
+  height: auto;
   margin-top: 10px;
 }
 
 .screenshot {
   width: 100%;
+  height: auto;
 }
 
 .main-logo {
@@ -109,7 +161,6 @@ img {
 
 .about-app {
   flex-direction: column;
-  margin-top: 30px;
   width: 100%;
   color: white;
   display: flex;
@@ -118,12 +169,10 @@ img {
 }
 
 .about-app > p {
-  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 .title {
-  font-family: 'Bebas Neue', cursive;
   text-align: center;
 }
 
@@ -183,7 +232,7 @@ footer {
   display: flex;
   margin: 0;
   padding: 0;
-  list-style: none!important;
+  list-style: none !important;
   flex-direction: column;
   font-size: 30px;
   justify-content: center;
@@ -239,19 +288,15 @@ header {
   right: 0;
 }
 
-
 /* 
 header > * {
   display: none;
 } */
 
 header a {
-  background-color: black;
   text-decoration: none !important;
-  padding: 10px;
-  border-radius: 10px;
   margin-left: 20px;
-  color: white !important;
+  border-bottom: 3px solid black;
 }
 
 .logo-web {
@@ -272,26 +317,22 @@ header a {
 
 .func-sect-container {
   background-color: white;
-  padding: 0!important;
-  height: auto;
-  width: 100vw!important;
-  max-width: 100vw!important;
-  background-image: url('../assets/images/coins.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-left: -35px;
+
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .func-sect {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+
+  transform: skew(0deg, -5deg);
+  -ms-transform: skew(0deg, -10deg);
+  -webkit-transform: skew(0deg, -5deg);
 }
 
 .func-sect > .row {
   height: auto;
-  max-height: 100vh!important;
+  max-height: 100vh !important;
   align-items: center;
 }
 
@@ -333,7 +374,7 @@ header a {
   display: block;
   text-align: center;
   border: 2px solid black;
-  color: rgb(0, 0, 0)!important;
+  color: rgb(0, 0, 0) !important;
   background-color: rgb(255, 255, 255);
   border-radius: 3px;
 }
@@ -347,11 +388,154 @@ header a {
   display: none;
 }
 
+.laptop-container {
+  background-image: url('../assets/images/macbook-transparent.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  max-height: 200px;
+  width: 100%;
+  padding: 0 !important;
+}
 
+.video-container {
+  padding-top: 20px;
+  padding-left: 45px !important;
+  padding-right: 45px !important;
+  padding-bottom: 20px;
+}
+
+.services-title {
+  text-align: center;
+  color: white;
+  font-family: Mon;
+}
+
+.services-container > img {
+  height: auto;
+  width: 100%;
+}
+
+.services-container > p {
+  text-align: center;
+  color: white;
+}
+
+.screenshot-desc-btn {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  color: black !important;
+}
+
+.social-networks-vert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  color: white;
+  background-color: rgb(216, 142, 58);
+  z-index: 100;
+  left: 20px;
+  height: 120px;
+  border-radius: 10px;
+  top: 50%;
+  margin-top: -60px;
+}
+
+/* START P BUBBLE CSS */
+
+p.bubble {
+  position: relative;
+  padding: 20px 20px 20px 65px;
+  background: orange;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  color: white;
+}
+
+/* Speach bouble Quote */
+p.bubble:before {
+  content: '\201C'; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+
+  /*Positioning*/
+  position: absolute;
+  left: 20px;
+  top: 5px;
+}
+
+/* Speech bouble triangle */
+p.bubble:after {
+  content: ' ';
+  border: 10px solid;
+  border-color: orange transparent transparent orange;
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+}
+
+.wrapper {
+  margin-bottom: 50px;
+}
+
+.wrapper img {
+  float: left;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.wrapper h3 {
+  padding: 15px 0 0 0;
+  color: orange;
+}
+.wrapper small {
+  display: block;
+  color: #999;
+  margin-top: -10px;
+}
+.wrapper ul {
+  list-style: none;
+}
+.wrapper ul li {
+  display: inline;
+  font-size: 1.3em;
+}
+.wrapper ul li:nth-child(-n + 4) {
+  color: orange;
+}
+
+.video-frame {
+  width: 220px;
+}
+
+/* END BUBBLE CSS */
 
 @media only screen and (min-width: 1140px) {
   .about-app {
     max-height: 80vh;
+  }
+
+  .main-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 40px;
+  }
+
+  .download-btn {
+    margin: 5px;
+    height: 50px;
+    width: auto;
+  }
+
+  .download-container {
+    flex-direction: row;
   }
 
   .main-logo.pc {
@@ -369,12 +553,12 @@ header a {
     max-height: 80vh;
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
   }
 
   .screenshot {
-    max-height: 50vh;
+    max-height: 70vh;
     width: 80%;
   }
 }
@@ -383,7 +567,6 @@ header a {
   .about-app {
     max-height: 50vh;
   }
-
 
   .main-logo.pc {
     display: initial;
@@ -438,11 +621,6 @@ header a {
     font-size: 20px;
   }
 
-  .video-container {
-    margin: 0;
-    padding: 60px;
-  }
-
   .logo-web {
     display: initial;
   }
@@ -458,7 +636,7 @@ header a {
   }
 
   .start-now-container-xl {
-    display: initial;
+    display: initialgit;
     width: 70%;
   }
 
@@ -478,4 +656,86 @@ header a {
     left: 5px;
     position: initial;
   }
+
+  .laptop-container {
+    height: 500px;
+    max-height: unset;
+  }
+
+  .video-frame {
+    width: 515px;
+    margin-top: 50px;
+    height: 350px;
+  }
+
+  .screenshot {
+    height: 100%;
+  }
+}
+
+/* Carousel */
+.brands {
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.brands_slider_container {
+  height: 130px;
+  border: solid 1px transparent;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding-left: 97px;
+  padding-right: 97px;
+}
+
+.brands_slider {
+  height: 100%;
+  margin-top: 50px;
+}
+
+.brands_item {
+  height: 100%;
+}
+
+.brands_item img {
+  max-width: 100%;
+}
+
+.brands_nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.brands_nav .i {
+  color: #ffffff;
+  font-size: 30px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.brands_nav:hover .i {
+  color: #676767;
+}
+
+.brands_prev {
+  left: 40px;
+}
+
+.brands_next {
+  right: 40px;
 }
