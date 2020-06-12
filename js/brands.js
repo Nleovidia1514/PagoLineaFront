@@ -6,13 +6,14 @@ $(document).ready(function(){
     
     brandsSlider.owlCarousel(
     {
-    loop:true,
+    loop:false,
     autoplay:true,
     autoplayTimeout:5000,
     nav:false,
-    dots:false,
+    dots:true,
     autoWidth:true,
     items:8,
+    center: true,
     margin:42
     });
     

@@ -83,7 +83,7 @@ header.opaque {
 }
 
 .social {
-  font-size: 30px;
+  font-size: 20px;
   margin: 10px;
 }
 
@@ -281,11 +281,11 @@ header {
 }
 
 .header-btn {
-  position: relative;
-  top: 13px;
+  position: absolute;
+  top: 15px;
   /* display: none; */
   outline: none;
-  right: 0;
+  right: 60px;
 }
 
 /* 
@@ -437,8 +437,9 @@ header a {
   position: fixed;
   color: white;
   background-color: rgb(216, 142, 58);
-  z-index: 100;
-  left: 20px;
+  z-index: 9;
+  left: 0px;
+  width: 30px;
   height: 120px;
   border-radius: 10px;
   top: 50%;
@@ -450,10 +451,12 @@ header a {
 p.bubble {
   position: relative;
   padding: 20px 20px 20px 65px;
-  background: orange;
+  background: #F3F8FB;
   border-radius: 10px;
   margin-bottom: 35px;
-  color: white;
+  color: black;
+  font-style: italic;
+  font-size: 15px;
 }
 
 /* Speach bouble Quote */
@@ -475,7 +478,7 @@ p.bubble:before {
 p.bubble:after {
   content: ' ';
   border: 10px solid;
-  border-color: orange transparent transparent orange;
+  border-color: #F3F8FB transparent transparent #F3F8FB;
   position: absolute;
   bottom: -20px;
   left: 30px;
@@ -488,11 +491,14 @@ p.bubble:after {
 .wrapper img {
   float: left;
   border-radius: 20px;
+  max-height: 100px;
+  width: 100px;
+  width: auto;
   margin-right: 20px;
 }
 .wrapper h3 {
   padding: 15px 0 0 0;
-  color: orange;
+  color: white;
 }
 .wrapper small {
   display: block;
@@ -512,6 +518,10 @@ p.bubble:after {
 
 .video-frame {
   width: 220px;
+}
+
+.icon-logo {
+  height: 30px;
 }
 
 /* END BUBBLE CSS */
@@ -627,7 +637,7 @@ p.bubble:after {
 
   .header-btn {
     display: initial;
-    top: 0;
+    /* top: 0; */
     right: 20px;
   }
 
@@ -688,6 +698,7 @@ p.bubble:after {
 .brands_slider_container {
   height: 130px;
   border: solid 1px transparent;
+  background-color: orange;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
   padding-left: 97px;
   padding-right: 97px;
@@ -695,15 +706,22 @@ p.bubble:after {
 
 .brands_slider {
   height: 100%;
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 .brands_item {
   height: 100%;
 }
 
+.brands_item > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .brands_item img {
   max-width: 100%;
+  width: 10px;
 }
 
 .brands_nav {
