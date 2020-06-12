@@ -411,14 +411,31 @@ header a {
   font-family: Mon;
 }
 
+.services-container {
+  display: none;
+  
+  color: white;
+}
+.services-container.mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.services-container.mobile > img {
+  object-fit: contain;
+  max-width: 30%;
+}
+
 .services-container > img {
   height: auto;
   width: 100%;
 }
 
-.services-container > p {
-  text-align: center;
-  color: white;
+.services-container p {
+  text-align: left;
 }
 
 .screenshot-desc-btn {
@@ -436,7 +453,7 @@ header a {
   align-items: center;
   position: fixed;
   color: white;
-  background-color: rgb(216, 142, 58);
+  background-color: rgb(0, 0, 0);
   z-index: 9;
   left: 0px;
   width: 30px;
@@ -684,6 +701,14 @@ p.bubble:after {
 
   .social-networks-vert {
     left: 20px;
+  }
+
+  .services-container.mobile {
+    display: none;
+  }
+
+  .services-container {
+    display: unset;
   }
 }
 
