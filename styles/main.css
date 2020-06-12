@@ -681,6 +681,10 @@ p.bubble:after {
   .screenshot {
     height: 100%;
   }
+
+  .social-networks-vert {
+    left: 20px;
+  }
 }
 
 /* Carousel */
@@ -698,7 +702,8 @@ p.bubble:after {
 .brands_slider_container {
   height: 130px;
   border: solid 1px transparent;
-  background-color: orange;
+  background-color: #b136bd;
+  border-radius: 10px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
   padding-left: 97px;
   padding-right: 97px;
